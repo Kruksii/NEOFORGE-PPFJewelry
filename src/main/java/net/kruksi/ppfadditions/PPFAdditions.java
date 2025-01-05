@@ -53,6 +53,7 @@ public class PPFAdditions
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlock.PPF_BLOCK);
+            event.accept(ModBlock.RUBY_ORE);
         }
     }
 

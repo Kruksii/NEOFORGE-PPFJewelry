@@ -2,5 +2,6 @@
   "item.ppfadditions.carbon": "Carbone",
   "item.ppfadditions.empty_bottle": "Bouteille vide",
 
-  "block.ppfadditions.ppf_block": "Bloc d'affichage PPF"
+  "block.ppfadditions.ppf_block": "Bloc d'affichage PPF",
+  "block.ppfadditions.ruby_ore": "Minerai de rubis"
 }

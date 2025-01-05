@@ -19,7 +19,13 @@ public class ModBlock {
     public static final DeferredBlock<Block> PPF_BLOCK = registerBlock("ppf_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
-                    .sound(SoundType.ANVIL)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .sound(SoundType.STONE)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
