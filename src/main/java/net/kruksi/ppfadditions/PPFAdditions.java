@@ -1,5 +1,9 @@
 package net.kruksi.ppfadditions;
 
+import net.kruksi.ppfadditions.block.ModBlock;
+import net.kruksi.ppfadditions.items.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -27,6 +31,10 @@ public class PPFAdditions
     {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -38,7 +46,14 @@ public class PPFAdditions
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.CARBON);
+            event.accept(ModItems.EMPTY_BOTTLE);
+        }
 
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlock.PPF_BLOCK);
+        }
     }
 
     @SubscribeEvent
