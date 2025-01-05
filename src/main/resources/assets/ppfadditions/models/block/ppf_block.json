@@ -1,6 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ppfadditions:block/ppf_block"
+    "north": "ppfadditions:block/ppf_block_text",
+    "east": "ppfadditions:block/ppf_block_side",
+    "south": "ppfadditions:block/ppf_block_side",
+    "west": "ppfadditions:block/ppf_block_side",
+    "down": "ppfadditions:block/ppf_block_side",
+    "up": "ppfadditions:block/ppf_block_side",
+    "particle": "ppfadditions:block/ppf_block_side"
   }
 }

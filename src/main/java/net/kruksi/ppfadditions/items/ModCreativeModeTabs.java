@@ -19,8 +19,6 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlock.PPF_BLOCK.get()))
                     .title(Component.translatable("creativetab.ppfadditions"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.CARBON);
-                        output.accept(ModItems.EMPTY_BOTTLE);
                         output.accept(ModBlock.PPF_BLOCK);
                         output.accept(ModBlock.RUBY_ORE);
                     })
