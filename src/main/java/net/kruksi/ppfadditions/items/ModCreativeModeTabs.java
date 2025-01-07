@@ -16,10 +16,10 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> PPF_ITEM_TAB = CREATIVE_MODE_TAB.register("ppf_item_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlock.PPF_BLOCK.get()))
+                    .icon(() -> new ItemStack(ModBlock.RUBY_ORE.get()))
                     .title(Component.translatable("creativetab.ppfadditions"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlock.PPF_BLOCK);
+                        output.accept(ModItems.RUBY);
                         output.accept(ModBlock.RUBY_ORE);
                     })
                     .build());

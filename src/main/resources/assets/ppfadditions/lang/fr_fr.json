@@ -1,9 +1,7 @@
 {
   "creativetab.ppfadditions": "PPF Additions",
 
-  "item.ppfadditions.carbon": "Carbone",
-  "item.ppfadditions.empty_bottle": "Bouteille vide",
+  "item.ppfadditions.ruby": "Rubis",
 
-  "block.ppfadditions.ppf_block": "Bloc d'affichage PPF",
   "block.ppfadditions.ruby_ore": "Minerai de rubis"
 }

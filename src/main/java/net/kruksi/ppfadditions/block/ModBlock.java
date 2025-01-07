@@ -16,12 +16,6 @@ import java.util.function.Supplier;
 public class ModBlock {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PPFAdditions.MOD_ID);
 
-    public static final DeferredBlock<Block> PPF_BLOCK = registerBlock("ppf_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-            ));
-
     public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
