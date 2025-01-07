@@ -20,6 +20,7 @@ public class ModBlock {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

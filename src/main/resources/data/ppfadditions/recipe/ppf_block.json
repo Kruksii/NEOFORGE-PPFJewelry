@@ -1,13 +1,14 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "ingredients": [
-    {
-      "item": "minecraft:torch"
-    }
-  ],
+  "cookingtime": 100,
+  "experience": 5,
+  "group": "ppf",
+  "ingredient": {
+    "item": "ppfadditions:ruby"
+  },
   "result": {
-    "count": 4,
-    "id": "minecraft:coal"
+    "count": 1,
+    "id": "ppfadditions:ruby_ore"
   }
 }
