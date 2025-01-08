@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModBlock.RUBY_ORE.get()))
                     .title(Component.translatable("creativetab.ppfadditions"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.JEWELFILE);
                         output.accept(ModItems.RUBY);
                         output.accept(ModBlock.RUBY_ORE);
                         output.accept(ModBlock.RUBY_BLOCK);
