@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "ppfadditions:ruby_block",
     "ppfadditions:ruby_ore"
   ]
 }

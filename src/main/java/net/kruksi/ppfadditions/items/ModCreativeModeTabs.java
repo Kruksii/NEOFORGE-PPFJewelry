@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY);
                         output.accept(ModBlock.RUBY_ORE);
+                        output.accept(ModBlock.RUBY_BLOCK);
                     })
                     .build());
 
