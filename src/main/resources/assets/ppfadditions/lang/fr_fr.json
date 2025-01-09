@@ -2,8 +2,10 @@
   "creativetab.ppfadditions": "PPF Additions",
 
   "item.ppfadditions.ruby": "Rubis",
+  "item.ppfadditions.ruby_polished": "Rubis poli",
   "item.ppfadditions.jewelfile": "Lime à bijou",
 
   "block.ppfadditions.ruby_ore": "Minerai de rubis",
-  "block.ppfadditions.ruby_block": "Bloc de Rubis"
+  "block.ppfadditions.ruby_block": "Bloc de Rubis",
+  "block.ppfadditions.ruby_block_polished": "Bloc de Rubis poli"
 }

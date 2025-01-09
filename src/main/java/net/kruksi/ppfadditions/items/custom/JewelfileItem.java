@@ -16,8 +16,7 @@ import java.util.Map;
 
 public class JewelfileItem extends Item {
     private static final Map<Block, Block> JEWELFILE_MAP = Map.of(
-            ModBlock.RUBY_BLOCK.get(), Blocks.DIAMOND_BLOCK,
-            Blocks.DIAMOND_BLOCK, ModBlock.RUBY_BLOCK.get()
+            ModBlock.RUBY_BLOCK.get(), ModBlock.RUBY_BLOCK_POLISHED.get()
     );
 
     public JewelfileItem(Properties properties) {
