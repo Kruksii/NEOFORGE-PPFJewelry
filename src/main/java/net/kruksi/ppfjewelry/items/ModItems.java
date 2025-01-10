@@ -23,7 +23,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
-
     public static final DeferredItem<Item> JEWELFILE = ITEMS.register("jewelfile",
             () -> new JewelfileItem(new Item.Properties().durability(250)));
 
