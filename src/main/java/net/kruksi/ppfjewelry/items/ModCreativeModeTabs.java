@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> PPF_ITEM_TAB = CREATIVE_MODE_TAB.register("ppf_item_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlock.RUBY_ORE.get()))
+                    .icon(() -> new ItemStack(ModItems.RUBY.get()))
                     .title(Component.translatable("creativetab.ppfjewelry"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.JEWELFILE);
@@ -26,7 +26,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.RUBY_BLOCK);
                         output.accept(ModBlock.RUBY_BLOCK_POLISHED);
                         output.accept(ModItems.PALLADIUM_RAW);
+                        output.accept(ModItems.PALLADIUM_INGOT);
                         output.accept(ModBlock.PALLADIUM_ORE);
+                        output.accept(ModBlock.PALLADIUM_BLOCK);
+                        output.accept(ModBlock.PALLADIUM_BLOCK_POLISHED);
                     })
                     .build());
 

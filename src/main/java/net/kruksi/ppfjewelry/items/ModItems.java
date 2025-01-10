@@ -19,10 +19,13 @@ public class ModItems {
     public static final DeferredItem<Item> PALLADIUM_RAW = ITEMS.register("palladium_raw",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
+            () -> new Item(new Item.Properties()));
+
 
 
     public static final DeferredItem<Item> JEWELFILE = ITEMS.register("jewelfile",
-            () -> new JewelfileItem(new Item.Properties().durability(100)));
+            () -> new JewelfileItem(new Item.Properties().durability(250)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

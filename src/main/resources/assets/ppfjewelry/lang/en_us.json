@@ -6,9 +6,12 @@
   "item.ppfjewelry.ruby_polished": "Polished Ruby",
   "item.ppfjewelry.jewelfile": "Jewelfile",
   "item.ppfjewelry.palladium_raw": "Raw Palladium",
+  "item.ppfjewelry.palladium_ingot": "Palladium ingot",
 
   "block.ppfjewelry.ruby_ore": "Ruby ore",
   "block.ppfjewelry.ruby_block": "Ruby block",
   "block.ppfjewelry.ruby_block_polished": "Polished Ruby block",
-  "block.ppfjewelry.palladium_ore": "Palladium ore"
+  "block.ppfjewelry.palladium_ore": "Palladium ore",
+  "block.ppfjewelry.palladium_block": "Palladium block",
+  "block.ppfjewelry.palladium_block_polished": "Polished Palladium block"
 }
