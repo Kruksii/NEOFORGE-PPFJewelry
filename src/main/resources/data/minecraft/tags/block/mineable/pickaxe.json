@@ -1,8 +1,9 @@
 {
   "replace": false,
   "values": [
-    "ppfadditions:ruby_block",
-    "ppfadditions:ruby_ore",
-    "ppfadditions:ruby_block_polished"
+    "ppfjewelry:ruby_block",
+    "ppfjewelry:ruby_ore",
+    "ppfjewelry:ruby_block_polished",
+    "ppfjewelry:palladium_ore"
   ]
 }

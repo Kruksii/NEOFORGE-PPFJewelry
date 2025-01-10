@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ppfjewelry:ruby_block_polished"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ppfjewelry:ruby_polished"
+  }
+}
