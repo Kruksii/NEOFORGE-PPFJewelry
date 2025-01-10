@@ -65,6 +65,20 @@ public class ModBlock {
                     .requiresCorrectToolForDrops()
             ));
 
+    public static final DeferredBlock<Block> SAPHIR_BLOCK = registerBlock("saphir_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+            ));
+
+    public static final DeferredBlock<Block> SAPHIR_BLOCK_POLISHED = registerBlock("saphir_block_polished",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+            ));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

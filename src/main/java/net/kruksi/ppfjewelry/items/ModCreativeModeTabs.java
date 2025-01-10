@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPHIR);
                         output.accept(ModItems.SAPHIR_POLISHED);
                         output.accept(ModBlock.SAPHIR_ORE);
+                        output.accept(ModBlock.SAPHIR_BLOCK);
+                        output.accept(ModBlock.SAPHIR_BLOCK_POLISHED);
                     })
                     .build());
 
