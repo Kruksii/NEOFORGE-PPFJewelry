@@ -22,6 +22,12 @@ public class ModItems {
     public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SAPHIR = ITEMS.register("saphir",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SAPHIR_POLISHED = ITEMS.register("saphir_polished",
+            () -> new Item(new Item.Properties()));
+
 
     public static final DeferredItem<Item> JEWELFILE = ITEMS.register("jewelfile",
             () -> new JewelfileItem(new Item.Properties().durability(250)));

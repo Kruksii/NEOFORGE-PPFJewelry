@@ -30,6 +30,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.PALLADIUM_ORE);
                         output.accept(ModBlock.PALLADIUM_BLOCK);
                         output.accept(ModBlock.PALLADIUM_BLOCK_POLISHED);
+                        output.accept(ModItems.SAPHIR);
+                        output.accept(ModItems.SAPHIR_POLISHED);
+                        output.accept(ModBlock.SAPHIR_ORE);
                     })
                     .build());
 

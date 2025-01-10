@@ -6,11 +6,14 @@
   "item.ppfjewelry.jewelfile": "Lime à bijou",
   "item.ppfjewelry.palladium_raw": "Palladium brut",
   "item.ppfjewelry.palladium_ingot": "Lingot de Palladium",
+  "item.ppfjewelry.saphir": "Saphir",
+  "item.ppfjewelry.saphir_polished": "Saphir poli",
 
   "block.ppfjewelry.ruby_ore": "Minerai de Rubis",
   "block.ppfjewelry.ruby_block": "Bloc de Rubis",
   "block.ppfjewelry.ruby_block_polished": "Bloc de Rubis poli",
   "block.ppfjewelry.palladium_ore": "Minerai de Palladium",
   "block.ppfjewelry.palladium_block": "Bloc de Palladium",
-  "block.ppfjewelry.palladium_block_polished": "Bloc de Palladium poli"
+  "block.ppfjewelry.palladium_block_polished": "Bloc de Palladium poli",
+  "block.ppfjewelry.saphir_ore": "Minerai de Saphir"
 }
