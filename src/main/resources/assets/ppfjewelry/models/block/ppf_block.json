@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ppfjewelry:block/ppf_block_blank",
+    "up": "ppfjewelry:block/ppf_block_blank",
+    "north": "ppfjewelry:block/ppf_block_text",
+    "east": "ppfjewelry:block/ppf_block_blank",
+    "south": "ppfjewelry:block/ppf_block_blank",
+    "west": "ppfjewelry:block/ppf_block_blank",
+    "particle": "ppfjewelry:block/ppf_block_blank"
+  },
+  "render_type": "solid"
+}

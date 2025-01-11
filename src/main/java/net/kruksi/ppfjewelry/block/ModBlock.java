@@ -1,6 +1,7 @@
 package net.kruksi.ppfjewelry.block;
 
 import net.kruksi.ppfjewelry.PPFJewelry;
+import net.kruksi.ppfjewelry.block.custom.PPFBlock;
 import net.kruksi.ppfjewelry.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,66 +17,66 @@ import java.util.function.Supplier;
 public class ModBlock {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PPFJewelry.MOD_ID);
 
+    // BASIC
     public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> RUBY_BLOCK_POLISHED = registerBlock("ruby_block_polished",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> PALLADIUM_ORE = registerBlock("palladium_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> PALLADIUM_BLOCK = registerBlock("palladium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> PALLADIUM_BLOCK_POLISHED = registerBlock("palladium_block_polished",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> SAPHIR_ORE = registerBlock("saphir_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> SAPHIR_BLOCK = registerBlock("saphir_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-
     public static final DeferredBlock<Block> SAPHIR_BLOCK_POLISHED = registerBlock("saphir_block_polished",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()
+            ));
+
+    //CUSTOM
+    public static final DeferredBlock<Block> PPF_BLOCK = registerBlock("ppf_block",
+            () -> new PPFBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
                     .requiresCorrectToolForDrops()
             ));
 

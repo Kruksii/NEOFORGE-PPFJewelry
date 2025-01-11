@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.ppfjewelry"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.JEWELFILE);
+                        output.accept(ModBlock.PPF_BLOCK);
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.RUBY_POLISHED);
                         output.accept(ModBlock.RUBY_ORE);
