@@ -4,6 +4,7 @@ import net.kruksi.ppfjewelry.PPFJewelry;
 import net.kruksi.ppfjewelry.items.custom.JewelfileItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -29,6 +30,18 @@ public class ModItems {
     public static final DeferredItem<Item> JEWELFILE = ITEMS.register("jewelfile",
             () -> new JewelfileItem(new Item.Properties()
                     .durability(250)));
+
+    // FOOD
+    public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.RUBY_APPLE)
+                    .rarity(Rarity.RARE))
+    );
+    public static final DeferredItem<Item> SAPHIR_APPLE = ITEMS.register("saphir_apple",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.SAPHIR_APPLE)
+                    .rarity(Rarity.RARE))
+    );
 
     // ARMOR
     public static final DeferredItem<ArmorItem> PALLADIUM_HELMET = ITEMS.register("palladium_helmet",

@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlock.PPF_BLOCK);
                         output.accept(ModItems.JEWELFILE);
+                        output.accept(ModItems.RUBY_APPLE);
+                        output.accept(ModItems.SAPHIR_APPLE);
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.RUBY_POLISHED);
                         output.accept(ModBlock.RUBY_ORE);
