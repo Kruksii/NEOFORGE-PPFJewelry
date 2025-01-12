@@ -25,5 +25,10 @@
   "block.ppfjewelry.saphir_ore": "Minerai de Saphir",
   "block.ppfjewelry.saphir_block": "Bloc de Saphir",
   "block.ppfjewelry.saphir_block_polished": "Bloc de Saphir poli",
-  "block.ppfjewelry.ppf_block": "Bloc d'affichage PPF"
+  "block.ppfjewelry.ppf_block": "Bloc d'affichage PPF",
+
+  "tooltip.ppfjewelry.more": "[SHIFT] pour détail",
+  "tooltip.ppfjewelry.jewelfile": "Le meilleur ami des bijoutiers",
+  "tooltip.ppfjewelry.jewelfile_shift": "A utiliser sur des blocs de métaux précieux",
+  "tooltip.ppfjewelry.ppf_block": "Le bloc de décoration ultime"
 }
