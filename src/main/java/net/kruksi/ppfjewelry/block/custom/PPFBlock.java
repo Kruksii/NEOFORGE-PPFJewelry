@@ -51,10 +51,4 @@ public class PPFBlock extends Block {
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
         return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
     }
-
-    @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.ppfjewelry.ppf_block"));
-        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-    }
 }

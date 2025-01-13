@@ -28,9 +28,7 @@
   "block.ppfjewelry.saphir_block_polished": "Polished Saphir block",
   "block.ppfjewelry.ppf_block": "Display block PPF",
 
-  "tooltip.ppfjewelry.more": "[SHIFT] for more",
+  "tooltip.ppfjewelry.more": "§7[SHIFT] §ofor more details§r",
   "tooltip.ppfjewelry.jewelfile": "A jeweller's best friend",
-  "tooltip.ppfjewelry.jewelfile_shift": "For use on precious metal blocks",
-  "tooltip.ppfjewelry.ppf_block": "A jeweller's best friend",
-  "tooltip.ppfjewelry.ppf_block": "The ultimate decorating block"
+  "tooltip.ppfjewelry.jewelfile_shift": "To use on precious metal blocks"
 }

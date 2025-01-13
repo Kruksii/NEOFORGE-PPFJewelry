@@ -2,12 +2,13 @@ package net.kruksi.ppfjewelry.items;
 
 import net.kruksi.ppfjewelry.PPFJewelry;
 import net.kruksi.ppfjewelry.items.custom.JewelfileItem;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PPFJewelry.MOD_ID);
