@@ -16,10 +16,13 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> PPF_ITEM_TAB = CREATIVE_MODE_TAB.register("ppf_item_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.RUBY.get()))
+                    .icon(() -> new ItemStack(ModItems.RUBY_POLISHED.get()))
                     .title(Component.translatable("creativetab.ppfjewelry"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlock.PPF_BLOCK);
                         output.accept(ModItems.JEWELFILE);
+                        output.accept(ModItems.RUBY_APPLE);
+                        output.accept(ModItems.SAPHIR_APPLE);
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.RUBY_POLISHED);
                         output.accept(ModBlock.RUBY_ORE);
@@ -30,6 +33,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.PALLADIUM_ORE);
                         output.accept(ModBlock.PALLADIUM_BLOCK);
                         output.accept(ModBlock.PALLADIUM_BLOCK_POLISHED);
+                        output.accept(ModItems.PALLADIUM_HELMET);
+                        output.accept(ModItems.PALLADIUM_CHESTPLATE);
+                        output.accept(ModItems.PALLADIUM_LEGGINGS);
+                        output.accept(ModItems.PALLADIUM_BOOTS);
                         output.accept(ModItems.SAPHIR);
                         output.accept(ModItems.SAPHIR_POLISHED);
                         output.accept(ModBlock.SAPHIR_ORE);

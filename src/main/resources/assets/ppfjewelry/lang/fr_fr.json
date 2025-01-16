@@ -3,11 +3,18 @@
 
   "item.ppfjewelry.ruby": "Rubis",
   "item.ppfjewelry.ruby_polished": "Rubis poli",
+  "item.ppfjewelry.ruby_apple": "Pomme de Ruby",
   "item.ppfjewelry.jewelfile": "Lime à bijou",
   "item.ppfjewelry.palladium_raw": "Palladium brut",
   "item.ppfjewelry.palladium_ingot": "Lingot de Palladium",
   "item.ppfjewelry.saphir": "Saphir",
   "item.ppfjewelry.saphir_polished": "Saphir poli",
+  "item.ppfjewelry.saphir_apple": "Pomme de Saphir",
+
+  "item.ppfjewelry.palladium_helmet": "Casque en Palladium",
+  "item.ppfjewelry.palladium_chestplate": "Torse en Palladium",
+  "item.ppfjewelry.palladium_leggings": "Pantalon en Palladium",
+  "item.ppfjewelry.palladium_boots": "Chaussure en Palladium",
 
   "block.ppfjewelry.ruby_ore": "Minerai de Rubis",
   "block.ppfjewelry.ruby_block": "Bloc de Rubis",
@@ -17,5 +24,10 @@
   "block.ppfjewelry.palladium_block_polished": "Bloc de Palladium poli",
   "block.ppfjewelry.saphir_ore": "Minerai de Saphir",
   "block.ppfjewelry.saphir_block": "Bloc de Saphir",
-  "block.ppfjewelry.saphir_block_polished": "Bloc de Saphir poli"
+  "block.ppfjewelry.saphir_block_polished": "Bloc de Saphir poli",
+  "block.ppfjewelry.ppf_block": "Bloc d'affichage PPF",
+
+  "tooltip.ppfjewelry.more": "§7[SHIFT] §opour plus de détails§r",
+  "tooltip.ppfjewelry.jewelfile": "Le meilleur ami des bijoutiers",
+  "tooltip.ppfjewelry.jewelfile_shift": "A utiliser sur des blocs de métaux précieux"
 }

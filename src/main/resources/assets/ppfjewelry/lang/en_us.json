@@ -4,11 +4,18 @@
 
   "item.ppfjewelry.ruby": "Ruby",
   "item.ppfjewelry.ruby_polished": "Polished Ruby",
+  "item.ppfjewelry.ruby_apple": "Ruby apple",
   "item.ppfjewelry.jewelfile": "Jewelfile",
   "item.ppfjewelry.palladium_raw": "Raw Palladium",
   "item.ppfjewelry.palladium_ingot": "Palladium ingot",
   "item.ppfjewelry.saphir": "Saphir",
   "item.ppfjewelry.saphir_polished": "Polished Saphir",
+  "item.ppfjewelry.saphir_apple": "Saphir apple",
+
+  "item.ppfjewelry.palladium_helmet": "Palladium helmet",
+  "item.ppfjewelry.palladium_chestplate": "Palladium chestplate",
+  "item.ppfjewelry.palladium_leggings": "Palladium leggings",
+  "item.ppfjewelry.palladium_boots": "Palladium boots",
 
   "block.ppfjewelry.ruby_ore": "Ruby ore",
   "block.ppfjewelry.ruby_block": "Ruby block",
@@ -18,5 +25,10 @@
   "block.ppfjewelry.palladium_block_polished": "Polished Palladium block",
   "block.ppfjewelry.saphir_ore": "Saphir ore",
   "block.ppfjewelry.saphir_block": "Saphir block",
-  "block.ppfjewelry.saphir_block_polished": "Polished Saphir block"
+  "block.ppfjewelry.saphir_block_polished": "Polished Saphir block",
+  "block.ppfjewelry.ppf_block": "Display block PPF",
+
+  "tooltip.ppfjewelry.more": "§7[SHIFT] §ofor more details§r",
+  "tooltip.ppfjewelry.jewelfile": "A jeweller's best friend",
+  "tooltip.ppfjewelry.jewelfile_shift": "To use on precious metal blocks"
 }
