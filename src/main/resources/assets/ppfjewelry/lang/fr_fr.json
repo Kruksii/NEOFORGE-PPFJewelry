@@ -40,6 +40,11 @@
   "block.ppfjewelry.saphir_fence_gate": "Portillon en Saphir",
   "block.ppfjewelry.saphir_wall": "Muret en Saphir",
   "block.ppfjewelry.saphir_block_polished": "Bloc de Saphir poli",
+  "block.ppfjewelry.saphir_polished_stairs": "Escalier en Saphir poli",
+  "block.ppfjewelry.saphir_polished_slab": "Dalle en Saphir poli",
+  "block.ppfjewelry.saphir_polished_fence": "Barrière en Saphir poli",
+  "block.ppfjewelry.saphir_polished_fence_gate": "Portillon en Saphir poli",
+  "block.ppfjewelry.saphir_polished_wall": "Muret en Saphir poli",
   "block.ppfjewelry.ppf_block": "Bloc d'affichage PPF",
 
   "tooltip.ppfjewelry.more": "§7[SHIFT] §opour plus de détails§r",

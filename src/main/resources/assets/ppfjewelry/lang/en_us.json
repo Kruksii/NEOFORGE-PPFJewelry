@@ -41,6 +41,11 @@
   "block.ppfjewelry.saphir_fence_gate": "Saphir fence gate",
   "block.ppfjewelry.saphir_wall": "Saphir Wall",
   "block.ppfjewelry.saphir_block_polished": "Polished Saphir block",
+  "block.ppfjewelry.saphir_polished_stairs": "Polished Saphir stair",
+  "block.ppfjewelry.saphir_polished_slab": "Polished Saphir slab",
+  "block.ppfjewelry.saphir_polished_fence": "Polished Saphir fence",
+  "block.ppfjewelry.saphir_polished_fence_gate": "Polished Saphir fence gate",
+  "block.ppfjewelry.saphir_polished_wall": "Polished Saphir Wall",
   "block.ppfjewelry.ppf_block": "Display block PPF",
 
   "tooltip.ppfjewelry.more": "§7[SHIFT] §ofor more details§r",
