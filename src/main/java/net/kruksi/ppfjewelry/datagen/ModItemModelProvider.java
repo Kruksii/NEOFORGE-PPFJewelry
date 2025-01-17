@@ -1,10 +1,14 @@
 package net.kruksi.ppfjewelry.datagen;
 
 import net.kruksi.ppfjewelry.PPFJewelry;
+import net.kruksi.ppfjewelry.block.ModBlock;
 import net.kruksi.ppfjewelry.items.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -13,6 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // BLOCK
         basicItem(ModItems.RUBY.get());
         basicItem(ModItems.RUBY_POLISHED.get());
         basicItem(ModItems.PALLADIUM_RAW.get());
@@ -26,5 +31,27 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.PALLADIUM_CHESTPLATE.get());
         basicItem(ModItems.PALLADIUM_LEGGINGS.get());
         basicItem(ModItems.PALLADIUM_BOOTS.get());
+
+        // NON-BLOCK
+        fenceItem(ModBlock.RUBY_FENCE, ModBlock.RUBY_BLOCK);
+        wallItem(ModBlock.RUBY_WALL, ModBlock.RUBY_BLOCK);
+        fenceItem(ModBlock.RUBY_POLISHED_FENCE, ModBlock.RUBY_BLOCK_POLISHED);
+        wallItem(ModBlock.RUBY_POLISHED_WALL, ModBlock.RUBY_BLOCK_POLISHED);
+        fenceItem(ModBlock.SAPHIR_FENCE, ModBlock.SAPHIR_BLOCK);
+        wallItem(ModBlock.SAPHIR_WALL, ModBlock.SAPHIR_BLOCK);
+        fenceItem(ModBlock.SAPHIR_POLISHED_FENCE, ModBlock.SAPHIR_BLOCK_POLISHED);
+        wallItem(ModBlock.SAPHIR_POLISHED_WALL, ModBlock.SAPHIR_BLOCK_POLISHED);
+    }
+
+    public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
+    }
+
+    public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID,
+                        "block/" + baseBlock.getId().getPath()));
     }
 }

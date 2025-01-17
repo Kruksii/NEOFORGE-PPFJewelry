@@ -27,7 +27,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RUBY_POLISHED);
                         output.accept(ModBlock.RUBY_ORE);
                         output.accept(ModBlock.RUBY_BLOCK);
+                        output.accept(ModBlock.RUBY_STAIRS);
+                        output.accept(ModBlock.RUBY_SLAB);
+                        output.accept(ModBlock.RUBY_FENCE);
+                        output.accept(ModBlock.RUBY_FENCE_GATE);
+                        output.accept(ModBlock.RUBY_WALL);
                         output.accept(ModBlock.RUBY_BLOCK_POLISHED);
+                        output.accept(ModBlock.RUBY_POLISHED_STAIRS);
+                        output.accept(ModBlock.RUBY_POLISHED_SLAB);
+                        output.accept(ModBlock.RUBY_POLISHED_FENCE);
+                        output.accept(ModBlock.RUBY_POLISHED_FENCE_GATE);
+                        output.accept(ModBlock.RUBY_POLISHED_WALL);
                         output.accept(ModItems.PALLADIUM_RAW);
                         output.accept(ModItems.PALLADIUM_INGOT);
                         output.accept(ModBlock.PALLADIUM_ORE);
@@ -41,7 +51,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPHIR_POLISHED);
                         output.accept(ModBlock.SAPHIR_ORE);
                         output.accept(ModBlock.SAPHIR_BLOCK);
+                        output.accept(ModBlock.SAPHIR_STAIRS);
+                        output.accept(ModBlock.SAPHIR_SLAB);
+                        output.accept(ModBlock.SAPHIR_FENCE);
+                        output.accept(ModBlock.SAPHIR_FENCE_GATE);
+                        output.accept(ModBlock.SAPHIR_WALL);
                         output.accept(ModBlock.SAPHIR_BLOCK_POLISHED);
+                        output.accept(ModBlock.SAPHIR_POLISHED_STAIRS);
+                        output.accept(ModBlock.SAPHIR_POLISHED_SLAB);
+                        output.accept(ModBlock.SAPHIR_POLISHED_FENCE);
+                        output.accept(ModBlock.SAPHIR_POLISHED_FENCE_GATE);
+                        output.accept(ModBlock.SAPHIR_POLISHED_WALL);
                     })
                     .build());
 
