@@ -165,54 +165,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stairBuilder(ModBlock.RUBY_STAIRS.get(), Ingredient.of(ModItems.RUBY))
                 .group("ruby")
                 .unlockedBy("has_ruby", has(ModItems.RUBY)).save(recipeOutput);
-        stairBuilder(ModBlock.RUBY_POLISHED_STAIRS.get(), Ingredient.of(ModItems.RUBY_POLISHED))
-                .group("ruby")
-                .unlockedBy("has_ruby_polished", has(ModItems.RUBY_POLISHED)).save(recipeOutput);
         stairBuilder(ModBlock.SAPHIR_STAIRS.get(), Ingredient.of(ModItems.SAPHIR))
                 .group("saphir")
                 .unlockedBy("has_saphir", has(ModItems.SAPHIR)).save(recipeOutput);
-        stairBuilder(ModBlock.SAPHIR_POLISHED_STAIRS.get(), Ingredient.of(ModItems.SAPHIR_POLISHED))
-                .group("saphir")
-                .unlockedBy("has_saphir_polished", has(ModItems.SAPHIR_POLISHED)).save(recipeOutput);
 
         // SLABS
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.RUBY_SLAB.get(), ModItems.RUBY);
-        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.RUBY_POLISHED_SLAB.get(), ModItems.RUBY_POLISHED);
         slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.SAPHIR_SLAB.get(), ModItems.SAPHIR);
-        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.SAPHIR_POLISHED_SLAB.get(), ModItems.SAPHIR_POLISHED);
 
         // FENCE
         fenceBuilder(ModBlock.RUBY_FENCE.get(), Ingredient.of(ModItems.RUBY))
                 .group("ruby")
                 .unlockedBy("has_ruby", has(ModItems.RUBY)).save(recipeOutput);
-        fenceBuilder(ModBlock.RUBY_POLISHED_FENCE.get(), Ingredient.of(ModItems.RUBY_POLISHED))
-                .group("ruby")
-                .unlockedBy("has_ruby_polished", has(ModItems.RUBY_POLISHED)).save(recipeOutput);
         fenceBuilder(ModBlock.SAPHIR_FENCE.get(), Ingredient.of(ModItems.SAPHIR))
                 .group("saphir")
                 .unlockedBy("has_saphir", has(ModItems.SAPHIR)).save(recipeOutput);
-        fenceBuilder(ModBlock.SAPHIR_POLISHED_FENCE.get(), Ingredient.of(ModItems.SAPHIR_POLISHED))
-                .group("saphir")
-                .unlockedBy("has_saphir_polished", has(ModItems.SAPHIR_POLISHED)).save(recipeOutput);
 
         // FENCE_GATE
         fenceGateBuilder(ModBlock.RUBY_FENCE_GATE.get(), Ingredient.of(ModItems.RUBY))
                 .group("ruby")
                 .unlockedBy("has_ruby", has(ModItems.RUBY)).save(recipeOutput);
-        fenceGateBuilder(ModBlock.RUBY_POLISHED_FENCE_GATE.get(), Ingredient.of(ModItems.RUBY_POLISHED))
-                .group("ruby")
-                .unlockedBy("has_ruby_polished", has(ModItems.RUBY_POLISHED)).save(recipeOutput);
         fenceGateBuilder(ModBlock.SAPHIR_FENCE_GATE.get(), Ingredient.of(ModItems.SAPHIR))
                 .group("saphir")
                 .unlockedBy("has_saphir", has(ModItems.SAPHIR)).save(recipeOutput);
-        fenceGateBuilder(ModBlock.SAPHIR_POLISHED_FENCE_GATE.get(), Ingredient.of(ModItems.SAPHIR_POLISHED))
-                .group("saphir")
-                .unlockedBy("has_saphir_polished", has(ModItems.SAPHIR_POLISHED)).save(recipeOutput);
 
         // WALL
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.RUBY_WALL.get(), ModItems.RUBY);
-        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.RUBY_POLISHED_WALL.get(), ModItems.RUBY_POLISHED);
         wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.SAPHIR_WALL.get(), ModItems.SAPHIR);
-        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlock.SAPHIR_POLISHED_WALL.get(), ModItems.SAPHIR_POLISHED);
     }
 }

@@ -2,6 +2,7 @@ package net.kruksi.ppfjewelry.block;
 
 import net.kruksi.ppfjewelry.PPFJewelry;
 import net.kruksi.ppfjewelry.block.custom.PPFBlock;
+import net.kruksi.ppfjewelry.block.custom.RubyLampBlock;
 import net.kruksi.ppfjewelry.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -105,37 +106,6 @@ public class ModBlock {
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-    public static final DeferredBlock<StairBlock> RUBY_POLISHED_STAIRS = registerBlock("ruby_polished_stairs",
-            () -> new StairBlock(ModBlock.RUBY_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of()
-                            .strength(4f)
-                            .sound(SoundType.STONE)
-                            .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<SlabBlock> RUBY_POLISHED_SLAB = registerBlock("ruby_polished_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<FenceBlock> RUBY_POLISHED_FENCE = registerBlock("ruby_polished_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<FenceGateBlock> RUBY_POLISHED_FENCE_GATE = registerBlock("ruby_polished_fence_gate",
-            () -> new FenceGateBlock(WoodType.OAK ,BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<WallBlock> RUBY_POLISHED_WALL = registerBlock("ruby_polished_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
     public static final DeferredBlock<StairBlock> SAPHIR_STAIRS = registerBlock("saphir_stairs",
             () -> new StairBlock(ModBlock.SAPHIR_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of()
@@ -167,43 +137,18 @@ public class ModBlock {
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()
             ));
-    public static final DeferredBlock<StairBlock> SAPHIR_POLISHED_STAIRS = registerBlock("saphir_polished_stairs",
-            () -> new StairBlock(ModBlock.SAPHIR_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of()
-                            .strength(4f)
-                            .sound(SoundType.STONE)
-                            .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<SlabBlock> SAPHIR_POLISHED_SLAB = registerBlock("saphir_polished_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<FenceBlock> SAPHIR_POLISHED_FENCE = registerBlock("saphir_polished_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<FenceGateBlock> SAPHIR_POLISHED_FENCE_GATE = registerBlock("saphir_polished_fence_gate",
-            () -> new FenceGateBlock(WoodType.OAK ,BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
-    public static final DeferredBlock<WallBlock> SAPHIR_POLISHED_WALL = registerBlock("saphir_polished_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-            ));
 
     //CUSTOM
     public static final DeferredBlock<Block> PPF_BLOCK = registerBlock("ppf_block",
             () -> new PPFBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
                     .requiresCorrectToolForDrops()
+            ));
+    public static final DeferredBlock<Block> RUBY_LAMP = registerBlock("ruby_lamp",
+            () -> new RubyLampBlock(BlockBehaviour.Properties.of()
+                    .strength(1f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(RubyLampBlock.CLICKED) ? 25:0)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

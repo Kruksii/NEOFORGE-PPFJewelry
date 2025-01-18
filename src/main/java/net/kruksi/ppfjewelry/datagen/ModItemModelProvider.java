@@ -35,12 +35,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         // NON-BLOCK
         fenceItem(ModBlock.RUBY_FENCE, ModBlock.RUBY_BLOCK);
         wallItem(ModBlock.RUBY_WALL, ModBlock.RUBY_BLOCK);
-        fenceItem(ModBlock.RUBY_POLISHED_FENCE, ModBlock.RUBY_BLOCK_POLISHED);
-        wallItem(ModBlock.RUBY_POLISHED_WALL, ModBlock.RUBY_BLOCK_POLISHED);
         fenceItem(ModBlock.SAPHIR_FENCE, ModBlock.SAPHIR_BLOCK);
         wallItem(ModBlock.SAPHIR_WALL, ModBlock.SAPHIR_BLOCK);
-        fenceItem(ModBlock.SAPHIR_POLISHED_FENCE, ModBlock.SAPHIR_BLOCK_POLISHED);
-        wallItem(ModBlock.SAPHIR_POLISHED_WALL, ModBlock.SAPHIR_BLOCK_POLISHED);
     }
 
     public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
