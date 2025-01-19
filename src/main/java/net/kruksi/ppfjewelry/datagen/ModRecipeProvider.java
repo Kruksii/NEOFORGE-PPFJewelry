@@ -137,6 +137,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('G', Items.GLOWSTONE)
                 .define('S', ModItems.SAPHIR_POLISHED)
                 .unlockedBy("has_saphir_polished", has(ModItems.SAPHIR_POLISHED)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PALLADIUM_SWORD.get())
+                .pattern(" P ")
+                .pattern(" P ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('P', ModItems.PALLADIUM_INGOT)
+                .unlockedBy("has_palladium_ingot", has(ModItems.PALLADIUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PALLADIUM_SHOVEL.get())
+                .pattern(" P ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('P', ModItems.PALLADIUM_INGOT)
+                .unlockedBy("has_palladium_ingot", has(ModItems.PALLADIUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PALLADIUM_PICKAXE.get())
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('P', ModItems.PALLADIUM_INGOT)
+                .unlockedBy("has_palladium_ingot", has(ModItems.PALLADIUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PALLADIUM_AXE.get())
+                .pattern("PP ")
+                .pattern("PS ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('P', ModItems.PALLADIUM_INGOT)
+                .unlockedBy("has_palladium_ingot", has(ModItems.PALLADIUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PALLADIUM_HOE.get())
+                .pattern("PP ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('P', ModItems.PALLADIUM_INGOT)
+                .unlockedBy("has_palladium_ingot", has(ModItems.PALLADIUM_INGOT)).save(recipeOutput);
 
         // SHAPELESS
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALLADIUM_RAW.get(), 9)
