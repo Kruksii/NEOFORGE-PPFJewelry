@@ -84,25 +84,25 @@ public class ModItems {
     public static final DeferredItem<ArmorItem> PALLADIUM_HELMET = ITEMS.register("palladium_helmet",
             () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.HELMET.getDurability(40))
+                            .durability(ArmorItem.Type.HELMET.getDurability(35))
             )
     );
     public static final DeferredItem<ArmorItem> PALLADIUM_CHESTPLATE = ITEMS.register("palladium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.CHESTPLATE.getDurability(40))
+                            .durability(ArmorItem.Type.CHESTPLATE.getDurability(35))
             )
     );
     public static final DeferredItem<ArmorItem> PALLADIUM_LEGGINGS = ITEMS.register("palladium_leggings",
             () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.LEGGINGS.getDurability(40))
+                            .durability(ArmorItem.Type.LEGGINGS.getDurability(35))
             )
     );
     public static final DeferredItem<ArmorItem> PALLADIUM_BOOTS = ITEMS.register("palladium_boots",
             () -> new ArmorItem(ModArmorMaterials.PALLADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.BOOTS.getDurability(40))
+                            .durability(ArmorItem.Type.BOOTS.getDurability(35))
             )
     );
 

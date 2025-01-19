@@ -6,24 +6,24 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
     public static final FoodProperties RUBY_APPLE = new FoodProperties.Builder()
-            .nutrition(5)
-            .saturationModifier(1.3f)
+            .nutrition(4)
+            .saturationModifier(1.2f)
             .alwaysEdible()
-            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 110), 1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2500), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 5000), 1.0f)
             .build();
     public static final FoodProperties SAPHIR_APPLE = new FoodProperties.Builder()
-            .nutrition(5)
-            .saturationModifier(1.3f)
+            .nutrition(4)
+            .saturationModifier(1.2f)
             .alwaysEdible()
-            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 110), 1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2500), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 250), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 7000), 1.0f)
             .build();
     public static final FoodProperties PALLADIUM_APPLE = new FoodProperties.Builder()
-            .nutrition(5)
-            .saturationModifier(1.3f)
+            .nutrition(4)
+            .saturationModifier(1.2f)
             .alwaysEdible()
-            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 110), 1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2500), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 150), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 3500), 1.0f)
             .build();
 }
