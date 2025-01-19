@@ -123,6 +123,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('S', ModItems.SAPHIR_POLISHED)
                 .unlockedBy("has_saphir_polished", has(ModItems.SAPHIR_POLISHED)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.RUBY_LAMP.get())
+                .pattern(" R ")
+                .pattern("RGR")
+                .pattern(" R ")
+                .define('G', Items.GLOWSTONE)
+                .define('R', ModItems.RUBY_POLISHED)
+                .unlockedBy("has_ruby_polished", has(ModItems.RUBY_POLISHED)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlock.SAPHIR_LAMP.get())
+                .pattern(" S ")
+                .pattern("SGS")
+                .pattern(" S ")
+                .define('G', Items.GLOWSTONE)
+                .define('S', ModItems.SAPHIR_POLISHED)
+                .unlockedBy("has_saphir_polished", has(ModItems.SAPHIR_POLISHED)).save(recipeOutput);
 
         // SHAPELESS
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALLADIUM_RAW.get(), 9)
