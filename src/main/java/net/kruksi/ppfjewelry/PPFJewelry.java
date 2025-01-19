@@ -1,6 +1,7 @@
 package net.kruksi.ppfjewelry;
 
 import net.kruksi.ppfjewelry.block.ModBlock;
+import net.kruksi.ppfjewelry.component.ModDataComponents;
 import net.kruksi.ppfjewelry.items.ModCreativeModeTabs;
 import net.kruksi.ppfjewelry.items.ModItems;
 import org.slf4j.Logger;
@@ -34,6 +35,7 @@ public class PPFJewelry
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlock.register(modEventBus);
+        ModDataComponents.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

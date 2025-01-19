@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.Block;
 public class ModTag {
     public static class Blocks {
         public static final TagKey<Block> ORE_BLOCKS = createTag("ore_blocks");
+        public static final TagKey<Block> NEEDS_PALLADIUM_TOOL = createTag("needs_palladium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PALLADIUM_TOOL = createTag("incorrect_for_palladium_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID, name));

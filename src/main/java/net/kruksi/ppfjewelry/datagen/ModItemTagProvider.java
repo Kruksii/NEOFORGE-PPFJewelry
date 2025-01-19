@@ -6,6 +6,7 @@ import net.kruksi.ppfjewelry.util.ModTag;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -20,12 +21,27 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        // CUSTOM
         tag(ModTag.Items.PRECIOUSSTONE_ITEMS)
                 .add(Items.EMERALD)
+                .add(ModItems.EMERALD_POLISHED.get())
                 .add(Items.DIAMOND)
-                .add(ModItems.SAPHIR_POLISHED.get())
+                .add(ModItems.DIAMOND_POLISHED.get())
                 .add(ModItems.SAPHIR.get())
-                .add(ModItems.RUBY_POLISHED.get())
-                .add(ModItems.RUBY.get());
+                .add(ModItems.SAPHIR_POLISHED.get())
+                .add(ModItems.RUBY.get())
+                .add(ModItems.RUBY_POLISHED.get());
+
+        // VANILLA
+        tag(ItemTags.SWORDS)
+                .add(ModItems.PALLADIUM_SWORD.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.PALLADIUM_SHOVEL.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.PALLADIUM_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.PALLADIUM_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.PALLADIUM_HOE.get());
     }
 }

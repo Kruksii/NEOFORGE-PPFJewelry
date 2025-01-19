@@ -6,9 +6,11 @@ import net.kruksi.ppfjewelry.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -18,6 +20,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         // BLOCK
+        basicItem(ModItems.DIAMOND_POLISHED.get());
+        basicItem(ModItems.EMERALD_POLISHED.get());
         basicItem(ModItems.RUBY.get());
         basicItem(ModItems.RUBY_POLISHED.get());
         basicItem(ModItems.PALLADIUM_RAW.get());
@@ -38,6 +42,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlock.RUBY_WALL, ModBlock.RUBY_BLOCK);
         fenceItem(ModBlock.SAPHIR_FENCE, ModBlock.SAPHIR_BLOCK);
         wallItem(ModBlock.SAPHIR_WALL, ModBlock.SAPHIR_BLOCK);
+
+        // HANDHELF
+        handheldItem(ModItems.PALLADIUM_SWORD);
+        handheldItem(ModItems.PALLADIUM_SHOVEL);
+        handheldItem(ModItems.PALLADIUM_PICKAXE);
+        handheldItem(ModItems.PALLADIUM_AXE);
+        handheldItem(ModItems.PALLADIUM_HOE);
     }
 
     public void fenceItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
@@ -50,5 +61,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RUBY_APPLE);
                         output.accept(ModItems.PALLADIUM_APPLE);
                         output.accept(ModItems.SAPHIR_APPLE);
+                        output.accept(ModItems.EMERALD_POLISHED);
+                        output.accept(ModItems.DIAMOND_POLISHED);
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.RUBY_POLISHED);
                         output.accept(ModBlock.RUBY_ORE);
@@ -37,6 +39,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.RUBY_BLOCK_POLISHED);
                         output.accept(ModItems.PALLADIUM_RAW);
                         output.accept(ModItems.PALLADIUM_INGOT);
+                        output.accept(ModItems.PALLADIUM_SWORD);
+                        output.accept(ModItems.PALLADIUM_SHOVEL);
+                        output.accept(ModItems.PALLADIUM_PICKAXE);
+                        output.accept(ModItems.PALLADIUM_AXE);
+                        output.accept(ModItems.PALLADIUM_HOE);
                         output.accept(ModBlock.PALLADIUM_ORE);
                         output.accept(ModBlock.PALLADIUM_BLOCK);
                         output.accept(ModBlock.PALLADIUM_BLOCK_POLISHED);

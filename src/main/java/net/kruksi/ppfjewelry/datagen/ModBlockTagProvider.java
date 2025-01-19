@@ -19,6 +19,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        // CUSTOM
+        tag(ModTag.Blocks.ORE_BLOCKS)
+                .add(ModBlock.RUBY_ORE.get())
+                .add(ModBlock.PALLADIUM_ORE.get())
+                .add(ModBlock.SAPHIR_ORE.get());
+        tag(ModTag.Blocks.NEEDS_PALLADIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTag.Blocks.INCORRECT_FOR_PALLADIUM_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTag.Blocks.NEEDS_PALLADIUM_TOOL);
+
+        // VANILLA
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlock.RUBY_ORE.get())
                 .add(ModBlock.RUBY_BLOCK.get())
@@ -30,27 +42,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlock.SAPHIR_BLOCK_POLISHED.get())
                 .add(ModBlock.PPF_BLOCK.get())
                 .add(ModBlock.SAPHIR_ORE.get());
-
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlock.RUBY_ORE.get())
                 .add(ModBlock.PALLADIUM_ORE.get())
                 .add(ModBlock.SAPHIR_ORE.get());
-
         tag(BlockTags.FENCES)
                 .add(ModBlock.RUBY_FENCE.get())
                 .add(ModBlock.SAPHIR_FENCE.get());
-
         tag(BlockTags.FENCE_GATES)
                 .add(ModBlock.RUBY_FENCE_GATE.get())
                 .add(ModBlock.SAPHIR_FENCE_GATE.get());
-
         tag(BlockTags.WALLS)
                 .add(ModBlock.RUBY_WALL.get())
                 .add(ModBlock.SAPHIR_WALL.get());
-
-        tag(ModTag.Blocks.ORE_BLOCKS)
-                .add(ModBlock.RUBY_ORE.get())
-                .add(ModBlock.PALLADIUM_ORE.get())
-                .add(ModBlock.SAPHIR_ORE.get());
     }
 }
