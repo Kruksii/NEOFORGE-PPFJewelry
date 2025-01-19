@@ -43,6 +43,11 @@ public class ModItems {
                     .food(ModFoodProperties.SAPHIR_APPLE)
                     .rarity(Rarity.RARE))
     );
+    public static final DeferredItem<Item> PALLADIUM_APPLE = ITEMS.register("palladium_apple",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.PALLADIUM_APPLE)
+                    .rarity(Rarity.RARE))
+    );
 
     // ARMOR
     public static final DeferredItem<ArmorItem> PALLADIUM_HELMET = ITEMS.register("palladium_helmet",

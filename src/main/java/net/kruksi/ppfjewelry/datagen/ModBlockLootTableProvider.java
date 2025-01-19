@@ -37,6 +37,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlock.RUBY_BLOCK_POLISHED.get());
         dropSelf(ModBlock.PALLADIUM_BLOCK.get());
         dropSelf(ModBlock.PALLADIUM_BLOCK_POLISHED.get());
+        dropSelf(ModBlock.SAPHIR_LAMP.get());
         dropSelf(ModBlock.SAPHIR_BLOCK.get());
         dropSelf(ModBlock.SAPHIR_STAIRS.get());
         dropSelf(ModBlock.SAPHIR_FENCE.get());

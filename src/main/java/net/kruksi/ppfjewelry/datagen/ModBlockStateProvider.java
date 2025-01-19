@@ -3,6 +3,7 @@ package net.kruksi.ppfjewelry.datagen;
 import net.kruksi.ppfjewelry.PPFJewelry;
 import net.kruksi.ppfjewelry.block.ModBlock;
 import net.kruksi.ppfjewelry.block.custom.RubyLampBlock;
+import net.kruksi.ppfjewelry.block.custom.SaphirLampBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -32,6 +33,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // CUSTOM BLOCKSTATE
         rubyLamp();
+        saphirLamp();
 
         // NON-BLOCK
         stairsBlock(ModBlock.RUBY_STAIRS.get(), blockTexture(ModBlock.RUBY_BLOCK.get()));
@@ -66,8 +68,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
             }
         });
 
-        simpleBlockItem(ModBlock.RUBY_LAMP.get(), models().cubeAll("ruby_lamp_on",
-                ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID, "block/" + "ruby_lamp_on")));
+        simpleBlockItem(ModBlock.RUBY_LAMP.get(), models().cubeAll("ruby_lamp_off",
+                ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID, "block/" + "ruby_lamp_off")));
+    }
+    private void saphirLamp() {
+        getVariantBuilder(ModBlock.SAPHIR_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(SaphirLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("saphir_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID, "block/" + "saphir_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("saphir_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID, "block/" + "saphir_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlock.SAPHIR_LAMP.get(), models().cubeAll("saphir_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(PPFJewelry.MOD_ID, "block/" + "saphir_lamp_off")));
     }
 
     // HELPER FUNCTION

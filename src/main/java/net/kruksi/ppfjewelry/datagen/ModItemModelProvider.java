@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SAPHIR_POLISHED.get());
         basicItem(ModItems.JEWELFILE.get());
         basicItem(ModItems.RUBY_APPLE.get());
+        basicItem(ModItems.PALLADIUM_APPLE.get());
         basicItem(ModItems.SAPHIR_APPLE.get());
         basicItem(ModItems.PALLADIUM_HELMET.get());
         basicItem(ModItems.PALLADIUM_CHESTPLATE.get());

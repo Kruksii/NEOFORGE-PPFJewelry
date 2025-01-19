@@ -3,6 +3,7 @@ package net.kruksi.ppfjewelry.block;
 import net.kruksi.ppfjewelry.PPFJewelry;
 import net.kruksi.ppfjewelry.block.custom.PPFBlock;
 import net.kruksi.ppfjewelry.block.custom.RubyLampBlock;
+import net.kruksi.ppfjewelry.block.custom.SaphirLampBlock;
 import net.kruksi.ppfjewelry.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -148,7 +149,13 @@ public class ModBlock {
             () -> new RubyLampBlock(BlockBehaviour.Properties.of()
                     .strength(1f)
                     .requiresCorrectToolForDrops()
-                    .lightLevel(state -> state.getValue(RubyLampBlock.CLICKED) ? 25:0)
+                    .lightLevel(state -> state.getValue(RubyLampBlock.CLICKED) ? 15:0)
+            ));
+    public static final DeferredBlock<Block> SAPHIR_LAMP = registerBlock("saphir_lamp",
+            () -> new SaphirLampBlock(BlockBehaviour.Properties.of()
+                    .strength(1f)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(SaphirLampBlock.CLICKED) ? 15:0)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
