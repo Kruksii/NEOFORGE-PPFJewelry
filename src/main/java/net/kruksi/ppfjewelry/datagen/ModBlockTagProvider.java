@@ -36,6 +36,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlock.PALLADIUM_ORE.get())
                 .add(ModBlock.SAPHIR_ORE.get());
 
+        tag(BlockTags.FENCES)
+                .add(ModBlock.RUBY_FENCE.get())
+                .add(ModBlock.SAPHIR_FENCE.get());
+
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlock.RUBY_FENCE_GATE.get())
+                .add(ModBlock.SAPHIR_FENCE_GATE.get());
+
+        tag(BlockTags.WALLS)
+                .add(ModBlock.RUBY_WALL.get())
+                .add(ModBlock.SAPHIR_WALL.get());
+
         tag(ModTag.Blocks.ORE_BLOCKS)
                 .add(ModBlock.RUBY_ORE.get())
                 .add(ModBlock.PALLADIUM_ORE.get())

@@ -22,11 +22,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlock.PPF_BLOCK);
                         output.accept(ModItems.JEWELFILE);
                         output.accept(ModItems.RUBY_APPLE);
+                        output.accept(ModItems.PALLADIUM_APPLE);
                         output.accept(ModItems.SAPHIR_APPLE);
                         output.accept(ModItems.RUBY);
                         output.accept(ModItems.RUBY_POLISHED);
                         output.accept(ModBlock.RUBY_ORE);
                         output.accept(ModBlock.RUBY_BLOCK);
+                        output.accept(ModBlock.RUBY_STAIRS);
+                        output.accept(ModBlock.RUBY_SLAB);
+                        output.accept(ModBlock.RUBY_FENCE);
+                        output.accept(ModBlock.RUBY_FENCE_GATE);
+                        output.accept(ModBlock.RUBY_WALL);
+                        output.accept(ModBlock.RUBY_LAMP);
                         output.accept(ModBlock.RUBY_BLOCK_POLISHED);
                         output.accept(ModItems.PALLADIUM_RAW);
                         output.accept(ModItems.PALLADIUM_INGOT);
@@ -41,6 +48,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPHIR_POLISHED);
                         output.accept(ModBlock.SAPHIR_ORE);
                         output.accept(ModBlock.SAPHIR_BLOCK);
+                        output.accept(ModBlock.SAPHIR_STAIRS);
+                        output.accept(ModBlock.SAPHIR_SLAB);
+                        output.accept(ModBlock.SAPHIR_FENCE);
+                        output.accept(ModBlock.SAPHIR_FENCE_GATE);
+                        output.accept(ModBlock.SAPHIR_WALL);
+                        output.accept(ModBlock.SAPHIR_LAMP);
                         output.accept(ModBlock.SAPHIR_BLOCK_POLISHED);
                     })
                     .build());

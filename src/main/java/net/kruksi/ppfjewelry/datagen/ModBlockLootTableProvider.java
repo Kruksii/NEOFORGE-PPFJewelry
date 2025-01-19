@@ -28,13 +28,29 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         // DROP SELF
+        dropSelf(ModBlock.RUBY_LAMP.get());
         dropSelf(ModBlock.RUBY_BLOCK.get());
+        dropSelf(ModBlock.RUBY_STAIRS.get());
+        dropSelf(ModBlock.RUBY_FENCE.get());
+        dropSelf(ModBlock.RUBY_FENCE_GATE.get());
+        dropSelf(ModBlock.RUBY_WALL.get());
         dropSelf(ModBlock.RUBY_BLOCK_POLISHED.get());
         dropSelf(ModBlock.PALLADIUM_BLOCK.get());
         dropSelf(ModBlock.PALLADIUM_BLOCK_POLISHED.get());
+        dropSelf(ModBlock.SAPHIR_LAMP.get());
         dropSelf(ModBlock.SAPHIR_BLOCK.get());
+        dropSelf(ModBlock.SAPHIR_STAIRS.get());
+        dropSelf(ModBlock.SAPHIR_FENCE.get());
+        dropSelf(ModBlock.SAPHIR_FENCE_GATE.get());
+        dropSelf(ModBlock.SAPHIR_WALL.get());
         dropSelf(ModBlock.SAPHIR_BLOCK_POLISHED.get());
         dropSelf(ModBlock.PPF_BLOCK.get());
+
+        // SLABS
+        add(ModBlock.RUBY_SLAB.get(),
+                block -> createSlabItemTable(ModBlock.RUBY_SLAB.get()));
+        add(ModBlock.SAPHIR_SLAB.get(),
+                block -> createSlabItemTable(ModBlock.SAPHIR_SLAB.get()));
 
         // ORE
         add(ModBlock.RUBY_ORE.get(), block ->
